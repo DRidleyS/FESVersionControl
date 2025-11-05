@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 50px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: white;
+  width: 280px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.plan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.plan--highlighted {
+  border: 2px solid #4337de;
+  box-shadow: 0 6px 20px rgba(67, 55, 222, 0.2);
+  transform: scale(1.05);
+}
+
+.plan--highlighted:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 12px 30px rgba(67, 55, 222, 0.25);
+}
+
+.plan__title {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.plan__price {
+  font-size: 32px;
+  color: #4337de;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plan__price span {
+  font-size: 16px;
+  color: #666;
+  font-weight: normal;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.plan__feature {
+  margin: 12px 0;
+  color: #555;
+  padding-left: 20px;
+  position: relative;
+}
+
+.plan__feature::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4337de;
+  font-weight: bold;
+}
+
+.plan__button {
+  background-color: #4337de;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.plan__button:hover {
+  background-color: #372fc3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .plans-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .plan--highlighted {
+    transform: none;
+  }
+  
+  .plan--highlighted:hover {
+    transform: translateY(-8px);
+  }
+  
+  body {
+    padding: 20px 10px;
+  }
+}

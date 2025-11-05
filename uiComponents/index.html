@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components</title>
+</head>
+<body>
+    <div id="component1"></div>
+    <div id="component2"></div>
+    <div id="component3"></div>
+
+    <script>
+        // Load component1.html
+        fetch('component1.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('component1').innerHTML = data;
+            });
+
+        // Load component2.html
+        fetch('component2.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('component2').innerHTML = data;
+            });
+
+        // Load component3.html
+        fetch('component3.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('component3').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

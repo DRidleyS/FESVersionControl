@@ -1,0 +1,15 @@
+body {
+  background-color: #f70808;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+h1 {
+  color: #0f25ee; /* hex */
+}
+
+p {
+  color: rgb(224, 27, 191); /* rgb */
+  background-color: rgb(15, 230, 129); /* named color */
+}

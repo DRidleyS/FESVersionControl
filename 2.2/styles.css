@@ -1,0 +1,16 @@
+.card {
+    width: 320px;
+    display: inline-block;
+    height: 180px;
+    background-color: #e6f3ff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+background-color: rgba(231, 152, 15, 0.5);
+}
